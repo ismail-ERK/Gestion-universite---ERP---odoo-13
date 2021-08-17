@@ -1,0 +1,68 @@
+<odoo>
+
+
+
+<!--    Session View-->
+   <record model="ir.ui.view" id="note_form_view">
+        <field name="name">note.form</field>
+        <field name="model">school.note</field>
+    <field name="arch" type="xml">
+        <form string="course Form">
+            <sheet>
+                <group>
+                    <field name="cours_id"/>
+                </group>
+                <group>
+                    <field name="student_id"/>
+                </group>
+                <group>
+                    <field name="professeur_id"/>
+                </group>
+                <group>
+                    <field name="note"/>
+                </group>
+                <group>
+                    <field name="filiere_id"/>
+                </group>
+                <group>
+                    <field name="departement_id"/>
+                </group>
+            </sheet>
+        </form>
+    </field>
+    </record>
+
+
+
+
+       <record model="ir.ui.view" id="note_tree_view">
+        <field name="name">note.form</field>
+        <field name="model">school.note</field>
+    <field name="arch" type="xml">
+        <tree string="course Tree">
+
+                    <field name="cours_id"/>
+                    <field name="student_id"/>
+                    <field name="professeur_id"/>
+                    <field name="note"/>
+                    <field name="filiere_id"/>
+
+        </tree>
+    </field>
+    </record>
+
+
+
+
+
+        <record model="ir.actions.act_window" id="note_list_action">
+            <field name="name">Notes</field>
+            <field name="res_model">school.note</field>
+            <field name="view_mode">tree,form</field>
+
+        </record>
+
+            <menuitem id="note_menu" name="Notes" parent="main__menu" action="note_list_action" sequence="7"/>
+
+
+</odoo>

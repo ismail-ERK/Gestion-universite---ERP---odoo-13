@@ -1,0 +1,45 @@
+<odoo>
+    <data>
+
+          <record id="object0" model="school.student">
+            <field name="name">Object 0</field>
+            <field name="description">description objet 0</field>
+          </record>
+
+          <record id="object1" model="school.student">
+            <field name="name">Object 1</field>
+            <field name="description">description objet 1</field>
+          </record>
+
+          <record id="object2" model="school.student">
+            <field name="name">Object 2</field>
+            <field name="description">description objet 2</field>
+          </record>
+
+          <record id="object3" model="school.student">
+            <field name="name">Object 3</field>
+            <field name="description">description objet 3</field>
+          </record>
+          <record id="object4" model="school.student">
+            <field name="name">Object 4</field>
+            <field name="description">description objet 4</field>
+          </record>
+
+          <record id="object5" model="school.student">
+            <field name="name">Object 5</field>
+            <field name="description">description objet 5</field>
+          </record>
+
+
+        <record model="ir.actions.act_window" id="action_list_ideas">
+            <field name="name">Ideas</field>
+            <field name="res_model">idea.idea</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem id="menu_ideas" parent="menu_root" name="Ideas" sequence="10"
+          action="action_list_ideas"/>
+
+
+    </data>
+</odoo>

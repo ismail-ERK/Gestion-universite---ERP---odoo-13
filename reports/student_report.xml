@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <report
+        id="report_student"
+        model="school.student"
+        string="Student Report"
+        name="gestiond'ecole.report_student_view"
+        file="school.report_student"
+        report_type="qweb-pdf" />
+
+    <template id="report_student_view">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="doc">
+                <t t-call="web.external_layout">
+                    <div class="page">
+                        <img t-attf-src="data:image/*;base64,{{doc.image}}" align="right" t-att-alt="doc.name"/>
+
+                        <h2><b>L'étudiant :</b> <span t-field="doc.name"/></h2>
+                        <h2><b>Filière :</b> <span t-field="doc.filieres_id"/></h2>
+                        <h2><b>Email :</b> <span t-field="doc.email"/></h2>
+                        <h2><b>Adresse :</b> <span t-field="doc.adresse"/></h2>
+                        <h2><b>Numero de téléphone : </b><span t-field="doc.tel"/></h2>
+
+
+                       <table class="table table-condensed" >
+                            <h3>Planning Menu</h3>
+                            <thead>
+                                <tr>
+                                    <th class="text-left">
+                                        <strong>Cours</strong>
+                                    </th>
+                                    <th class="text-left">
+                                        <strong>Professeur</strong>
+                                    </th>
+                                    <th class="text-left">
+                                        <strong>Note</strong>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                    <!--<p><span t-field="o.service_type_id"/> </p>-->
+                                    <tr t-foreach="doc.note_ids" t-as="l">
+                                        <td class="text-left">
+                                            <span t-field="l.cours_id"/>
+                                        </td>
+                                        <td class="text-left">
+                                            <span t-field="l.professeur_id"/>
+                                        </td>
+                                        <td class="text-left">
+                                            <span t-field="l.note"/>
+                                        </td>
+
+                                    </tr>
+
+                            </tbody>
+
+            </table>
+                        <table style="border: 3px solid Black;">
+                            <thead>
+                                <tr>
+                                    <th class="text-right">
+                                        <strong>Note Finale</strong>
+                                    </th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                        <td class="text-right">
+                                            <span t-field="doc.note_f"/>
+                                        </td>
+
+
+                            </tbody>
+                        </table>
+
+
+
+
+                        <h1>Parent:</h1>
+                        <ul>
+                            <t t-foreach="doc.parent_ids" t-as="parent">
+                                <li>
+                                    <span t-field="parent.name"/>
+                                </li>
+                            </t>
+                        </ul>
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+
+
+
+</odoo>
+

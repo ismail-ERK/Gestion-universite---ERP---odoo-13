@@ -1,0 +1,30 @@
+<odoo>
+        <record model="ir.ui.view" id="partner_instructor_form_view">
+        <field name="name">new_view</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+    <field name="arch" type="xml">
+      <notebook position="inside">
+          <page string="Sessions">
+              <label for="session_ids"/>
+              <field name="session_ids"/>
+          </page>
+      </notebook>
+    </field>
+    </record>
+
+
+
+       <record model="ir.actions.act_window" id="partner_list_action">
+            <field name="name">Contacts</field>
+            <field name="res_model">res.partner</field>
+            <field name="view_mode">tree,form</field>
+
+        </record>
+<!--le menues-->
+
+        <menuitem id="configuration_menu" name="Our Contacts" parent="main__menu"/>
+
+        <menuitem id="contact_menu" name="Contacts" parent="configuration_menu" action="partner_list_action"/>
+
+</odoo>

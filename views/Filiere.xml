@@ -1,0 +1,105 @@
+<odoo>
+
+<!--    Student View-->
+<!--   l'orsqu'on clique sur un student-->
+
+    <record model="ir.ui.view" id="filiere_form_view">
+        <field name="name">filiere.form</field>
+        <field name="model">school.filiere</field>
+        <field name="arch" type="xml">
+            <form string="Filiere Form">
+                <sheet>
+
+                    <group>
+                        <field name="name"/>
+                    </group>
+                    <group>
+                        <field name="responsable_id"/>
+                    </group>
+                    <group>
+                        <field name="faculte_id"/>
+                    </group>
+                     <group>
+                    <field name="departement_id"/>
+                    </group>
+                    <notebook>
+                        <page string="Cours">
+                            <field name="course_ids">
+                                <tree string="Cours">
+                                    <field name="name"/>
+                                    <field name="description"/>
+                                    <field name="responsible_id"/>
+                                </tree>
+                            </field>
+                        </page>
+                          <page string="Students">
+                            <field name="student_ids">
+                                <tree string="Students">
+                                    <field name="name"/>
+                                    <field name="email"/>
+                                </tree>
+                            </field>
+                        </page>
+
+                    </notebook>
+
+
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+<!--    l'affichage des students-->
+    <record model="ir.ui.view" id="filiere_tree_view">
+        <field name="name">filiere.tree</field>
+        <field name="model">school.filiere</field>
+        <field name="arch" type="xml">
+            <tree string="filiere Tree">
+
+                        <field name="name"/>
+                        <field name="responsable_id"/>
+                        <field name="faculte_id"/>
+
+            </tree>
+        </field>
+    </record>
+
+<!--search par rapport au donnees passer par fields-->
+
+    <record model="ir.ui.view" id="Filiere_search_view">
+        <field name="name">filiere.search</field>
+        <field name="model">school.filiere</field>
+    <field name="arch" type="xml">
+        <search string="Parent Tree">
+
+                    <field name="name"/>
+                    <field name="responsable_id"/>
+                    <field name="faculte_id"/>
+
+
+        </search>
+    </field>
+    </record>
+
+
+<!--format de l'interface-->
+
+
+       <record model="ir.actions.act_window" id="Filiere_list_action">
+            <field name="name">Filieres</field>
+            <field name="res_model">school.filiere</field>
+            <field name="view_mode">tree,form,search</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                  Create the first course
+                </p>
+            </field>
+        </record>
+<!--le menues-->
+
+
+        <menuitem id="filiere_menu" name="Filiere" parent="main__menu" action="Filiere_list_action" sequence="5"/>
+
+
+
+</odoo>

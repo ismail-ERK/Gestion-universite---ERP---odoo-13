@@ -1,0 +1,1050 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* gestiond'ecole
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0-20210721\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-08-11 20:14+0000\n"
+"PO-Revision-Date: 2021-08-11 20:14+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: gestiond'ecole
+#: model:mail.template,body_html:gestiond'ecole.email_template_student
+msgid ""
+"\n"
+"                <p>\n"
+"                    <strong>Chez ${object.name} ,</strong>\n"
+"                </p>\n"
+"                <p>Voila ton rapport contient vos infos et ton bulltin.</p>\n"
+"                <p>Bon courage.</p>\n"
+"            \n"
+"\n"
+"            "
+msgstr ""
+
+#. module: gestiond'ecole
+#: model:mail.template,subject:gestiond'ecole.email_template_student
+msgid "${object.name} report"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model_terms:ir.ui.view,arch_db:gestiond'ecole.report_student_view
+msgid "<b>Adresse :</b>"
+msgstr "عنوان "
+
+#. module: gestiond'ecole
+#: model_terms:ir.ui.view,arch_db:gestiond'ecole.report_student_view
+msgid "<b>Email :</b>"
+msgstr "بريد إلكتروني: "
+
+#. module: gestiond'ecole
+#: model_terms:ir.ui.view,arch_db:gestiond'ecole.report_student_view
+msgid "<b>Filière :</b>"
+msgstr "شعبة :"
+
+#. module: gestiond'ecole
+#: model_terms:ir.ui.view,arch_db:gestiond'ecole.report_student_view
+msgid "<b>L'étudiant :</b>"
+msgstr "الطالب :"
+
+#. module: gestiond'ecole
+#: model_terms:ir.ui.view,arch_db:gestiond'ecole.report_student_view
+msgid "<b>Numero de téléphone : </b>"
+msgstr "رقم الهاتف :"
+
+#. module: gestiond'ecole
+#: model_terms:ir.ui.view,arch_db:gestiond'ecole.report_student_view
+msgid "<strong>Cours</strong>"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model_terms:ir.ui.view,arch_db:gestiond'ecole.report_student_view
+msgid "<strong>Note Finale</strong>"
+msgstr "الدرس :"
+
+#. module: gestiond'ecole
+#: model_terms:ir.ui.view,arch_db:gestiond'ecole.report_student_view
+msgid "<strong>Note</strong>"
+msgstr "النقط :"
+
+#. module: gestiond'ecole
+#: model_terms:ir.ui.view,arch_db:gestiond'ecole.report_student_view
+msgid "<strong>Professeur</strong>"
+msgstr "الأستاد :"
+
+#. module: gestiond'ecole
+#: model:ir.actions.act_window,name:gestiond'ecole.absence_list_action
+#: model_terms:ir.ui.view,arch_db:gestiond'ecole.session_form_view
+msgid "Absence"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model_terms:ir.ui.view,arch_db:gestiond'ecole.absence_calender_view
+msgid "Absence Students Calendar"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model_terms:ir.ui.view,arch_db:gestiond'ecole.absence_tree_view
+msgid "Absence Tree"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_session__absences
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_student__absence_ids
+#: model:ir.ui.menu,name:gestiond'ecole.openacademy_menu3
+msgid "Absences"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_course__message_needaction
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_departement__message_needaction
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_parent__message_needaction
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_student__message_needaction
+msgid "Action Needed"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_student__adresse
+msgid "Adresse de l'étudiant"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_faculte__adresse
+msgid "Adresse de la faculte"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_parent__adresse
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_professeur__adresse
+msgid "Adresse student"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_course__message_attachment_count
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_departement__message_attachment_count
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_parent__message_attachment_count
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_student__message_attachment_count
+msgid "Attachment Count"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model:ir.model.fields,field_description:gestiond'ecole.field_res_partner__session_ids
+#: model:ir.model.fields,field_description:gestiond'ecole.field_res_users__session_ids
+msgid "Attended Sessions"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model_terms:ir.ui.view,arch_db:gestiond'ecole.report_session_view
+msgid "Attendees:"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model_terms:ir.ui.view,arch_db:gestiond'ecole.departement_kanban_view
+#: model_terms:ir.ui.view,arch_db:gestiond'ecole.faculte_kanban_view
+#: model_terms:ir.ui.view,arch_db:gestiond'ecole.parent_kanban_view
+#: model_terms:ir.ui.view,arch_db:gestiond'ecole.professeur_kanban_view
+#: model_terms:ir.ui.view,arch_db:gestiond'ecole.student_kanban_view
+msgid "Avatar"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_professeur__email
+msgid "Boite electronique"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_departement__email
+msgid "Boite electronique de la departement"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_faculte__email
+msgid "Boite electronique de la faculte"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_parent__email
+msgid "Boite éléctronique du parent"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_departement__Chef_Departement
+msgid "Chef de departement"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_session__color
+msgid "Color"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model:ir.model,name:gestiond'ecole.model_res_partner
+msgid "Contact"
+msgstr "جهة الاتصال"
+
+#. module: gestiond'ecole
+#: model:ir.actions.act_window,name:gestiond'ecole.partner_list_action
+#: model:ir.ui.menu,name:gestiond'ecole.contact_menu
+msgid "Contacts"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_faculte__courses_ids
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_session__course_id
+#: model:ir.ui.menu,name:gestiond'ecole.course_menu
+#: model_terms:ir.ui.view,arch_db:gestiond'ecole.departementt_form_view
+#: model_terms:ir.ui.view,arch_db:gestiond'ecole.faculte_form_view
+#: model_terms:ir.ui.view,arch_db:gestiond'ecole.filiere_form_view
+#: model_terms:ir.ui.view,arch_db:gestiond'ecole.student_form_view
+msgid "Cours"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model:ir.actions.act_window,name:gestiond'ecole.course_list_action
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_departement__courses_ids
+msgid "Courses"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model:ir.ui.menu,name:gestiond'ecole.openacademy_menu2
+msgid "Courses and Sessions"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model_terms:ir.actions.act_window,help:gestiond'ecole.Filiere_list_action
+#: model_terms:ir.actions.act_window,help:gestiond'ecole.departement_list_action
+#: model_terms:ir.actions.act_window,help:gestiond'ecole.faculte_list_action
+#: model_terms:ir.actions.act_window,help:gestiond'ecole.parent_list_action
+#: model_terms:ir.actions.act_window,help:gestiond'ecole.professeur_list_action
+#: model_terms:ir.actions.act_window,help:gestiond'ecole.student_list_action
+msgid "Create the first course"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_absence__create_uid
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_course__create_uid
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_departement__create_uid
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_faculte__create_uid
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_filiere__create_uid
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_note__create_uid
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_parent__create_uid
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_professeur__create_uid
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_session__create_uid
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_student__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_absence__create_date
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_course__create_date
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_departement__create_date
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_faculte__create_date
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_filiere__create_date
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_note__create_date
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_parent__create_date
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_professeur__create_date
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_session__create_date
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_student__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_absence__date_absence
+msgid "Date Absence"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_parent__date_naissance
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_professeur__date_naissance
+msgid "Date de naissance"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model:ir.actions.act_window,name:gestiond'ecole.departement_list_action
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_course__departement_id
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_filiere__departement_id
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_note__departement_id
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_professeur__departement_id
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_session__departement_id
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_student__departement_id
+#: model:ir.ui.menu,name:gestiond'ecole.departement_menu
+msgid "Departement"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model_terms:ir.ui.view,arch_db:gestiond'ecole.departementt_form_view
+msgid "Departement Form"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model_terms:ir.ui.view,arch_db:gestiond'ecole.departement_search_view
+#: model_terms:ir.ui.view,arch_db:gestiond'ecole.departement_tree_view
+msgid "Departement Tree"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_faculte__departement_ids
+#: model_terms:ir.ui.view,arch_db:gestiond'ecole.faculte_form_view
+msgid "Departements"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_course__description
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_student__description
+#: model_terms:ir.ui.view,arch_db:gestiond'ecole.course_form_view
+msgid "Description"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_absence__display_name
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_course__display_name
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_departement__display_name
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_faculte__display_name
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_filiere__display_name
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_note__display_name
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_parent__display_name
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_professeur__display_name
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_session__display_name
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_student__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_absence__duration
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_session__duration
+msgid "Duration"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model:ir.model.fields,help:gestiond'ecole.field_school_absence__duration
+#: model:ir.model.fields,help:gestiond'ecole.field_school_session__duration
+msgid "Durée dans un jour"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_student__email
+msgid "Email de l'étudiant"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_session__attendee_ids
+msgid "Etudiant"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_absence__student_ids
+msgid "Etudiants absent"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model_terms:ir.ui.view,arch_db:gestiond'ecole.session_form_view
+msgid "Etudiants assistés"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model_terms:ir.ui.view,arch_db:gestiond'ecole.faculte_form_view
+msgid "Faculte Form"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model_terms:ir.ui.view,arch_db:gestiond'ecole.faculte_search_view
+msgid "Faculte Tree"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model:ir.actions.act_window,name:gestiond'ecole.faculte_list_action
+#: model:ir.ui.menu,name:gestiond'ecole.faculte_menu
+msgid "Facultes"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_course__filiere_ids
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_session__filiere_id
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_student__filieres_id
+#: model:ir.ui.menu,name:gestiond'ecole.filiere_menu
+#: model_terms:ir.ui.view,arch_db:gestiond'ecole.faculte_form_view
+msgid "Filiere"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model_terms:ir.ui.view,arch_db:gestiond'ecole.filiere_form_view
+msgid "Filiere Form"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model:ir.actions.act_window,name:gestiond'ecole.Filiere_list_action
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_departement__filiere_ids
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_faculte__filiere_ids
+#: model_terms:ir.ui.view,arch_db:gestiond'ecole.course_form_view
+#: model_terms:ir.ui.view,arch_db:gestiond'ecole.departementt_form_view
+#: model_terms:ir.ui.view,arch_db:gestiond'ecole.faculte_form_view
+msgid "Filieres"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_parent__fils_ids
+msgid "Fils"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_course__message_follower_ids
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_departement__message_follower_ids
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_parent__message_follower_ids
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_student__message_follower_ids
+msgid "Followers"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_course__message_channel_ids
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_departement__message_channel_ids
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_parent__message_channel_ids
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_student__message_channel_ids
+msgid "Followers (Channels)"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_course__message_partner_ids
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_departement__message_partner_ids
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_parent__message_partner_ids
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_student__message_partner_ids
+msgid "Followers (Partners)"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model_terms:ir.ui.view,arch_db:gestiond'ecole.report_session_view
+msgid "Form"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model_terms:ir.ui.view,arch_db:gestiond'ecole.absence_form_view
+#: model_terms:ir.ui.view,arch_db:gestiond'ecole.session_form_view
+msgid "General"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model:ir.ui.menu,name:gestiond'ecole.main__menu
+msgid "Gestion d'une universite"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_student__courses_ids
+msgid "His courses"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_professeur__image
+msgid "His image"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_absence__id
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_course__id
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_departement__id
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_faculte__id
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_filiere__id
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_note__id
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_parent__id
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_professeur__id
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_session__id
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_student__id
+msgid "ID"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model:ir.model.fields,help:gestiond'ecole.field_school_course__message_needaction
+#: model:ir.model.fields,help:gestiond'ecole.field_school_course__message_unread
+#: model:ir.model.fields,help:gestiond'ecole.field_school_departement__message_needaction
+#: model:ir.model.fields,help:gestiond'ecole.field_school_departement__message_unread
+#: model:ir.model.fields,help:gestiond'ecole.field_school_parent__message_needaction
+#: model:ir.model.fields,help:gestiond'ecole.field_school_parent__message_unread
+#: model:ir.model.fields,help:gestiond'ecole.field_school_student__message_needaction
+#: model:ir.model.fields,help:gestiond'ecole.field_school_student__message_unread
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: gestiond'ecole
+#: model:ir.model.fields,help:gestiond'ecole.field_school_course__message_has_error
+#: model:ir.model.fields,help:gestiond'ecole.field_school_departement__message_has_error
+#: model:ir.model.fields,help:gestiond'ecole.field_school_parent__message_has_error
+#: model:ir.model.fields,help:gestiond'ecole.field_school_student__message_has_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: gestiond'ecole
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_course__message_is_follower
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_departement__message_is_follower
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_parent__message_is_follower
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_student__message_is_follower
+msgid "Is Follower"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model_terms:ir.ui.view,arch_db:gestiond'ecole.report_session_view
+msgid "La duree :"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_note__note
+msgid "La note"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_absence____last_update
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_course____last_update
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_departement____last_update
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_faculte____last_update
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_filiere____last_update
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_note____last_update
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_parent____last_update
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_professeur____last_update
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_session____last_update
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_student____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_absence__write_uid
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_course__write_uid
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_departement__write_uid
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_faculte__write_uid
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_filiere__write_uid
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_note__write_uid
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_parent__write_uid
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_professeur__write_uid
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_session__write_uid
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_student__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_absence__write_date
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_course__write_date
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_departement__write_date
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_faculte__write_date
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_filiere__write_date
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_note__write_date
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_parent__write_date
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_professeur__write_date
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_session__write_date
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_student__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model:ir.model.constraint,message:gestiond'ecole.constraint_school_course_name_description_check
+msgid "Le nom doit pas être la description du cours"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model:ir.model.constraint,message:gestiond'ecole.constraint_school_course_name_unisue
+msgid "Le nom doit être unique"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model_terms:ir.ui.view,arch_db:gestiond'ecole.report_session_view
+msgid "Le porcentage de presence :"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model_terms:ir.ui.view,arch_db:gestiond'ecole.session_form_view
+msgid "Les etudiants assistés"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model_terms:ir.ui.view,arch_db:gestiond'ecole.session_form_view
+msgid "Les places prise"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_course__message_main_attachment_id
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_departement__message_main_attachment_id
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_parent__message_main_attachment_id
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_student__message_main_attachment_id
+msgid "Main Attachment"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_course__message_has_error
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_departement__message_has_error
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_parent__message_has_error
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_student__message_has_error
+msgid "Message Delivery error"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_course__message_ids
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_departement__message_ids
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_parent__message_ids
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_student__message_ids
+msgid "Messages"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_session__name
+msgid "Name"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_student__name
+msgid "Nom de l'étudiant"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model_terms:ir.ui.view,arch_db:gestiond'ecole.report_session_view
+msgid "Nombre des places :"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_session__attendees_count
+msgid "Nombre des étudiants"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_student__note_f
+msgid "Note Finale"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model:ir.actions.act_window,name:gestiond'ecole.note_list_action
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_course__student_ids
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_student__note_ids
+#: model:ir.ui.menu,name:gestiond'ecole.note_menu
+#: model_terms:ir.ui.view,arch_db:gestiond'ecole.student_form_view
+msgid "Notes"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_course__message_needaction_counter
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_departement__message_needaction_counter
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_parent__message_needaction_counter
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_student__message_needaction_counter
+msgid "Number of Actions"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_course__message_has_error_counter
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_departement__message_has_error_counter
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_parent__message_has_error_counter
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_student__message_has_error_counter
+msgid "Number of errors"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model:ir.model.fields,help:gestiond'ecole.field_school_course__message_needaction_counter
+#: model:ir.model.fields,help:gestiond'ecole.field_school_departement__message_needaction_counter
+#: model:ir.model.fields,help:gestiond'ecole.field_school_parent__message_needaction_counter
+#: model:ir.model.fields,help:gestiond'ecole.field_school_student__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model:ir.model.fields,help:gestiond'ecole.field_school_course__message_has_error_counter
+#: model:ir.model.fields,help:gestiond'ecole.field_school_departement__message_has_error_counter
+#: model:ir.model.fields,help:gestiond'ecole.field_school_parent__message_has_error_counter
+#: model:ir.model.fields,help:gestiond'ecole.field_school_student__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model:ir.model.fields,help:gestiond'ecole.field_school_course__message_unread_counter
+#: model:ir.model.fields,help:gestiond'ecole.field_school_departement__message_unread_counter
+#: model:ir.model.fields,help:gestiond'ecole.field_school_parent__message_unread_counter
+#: model:ir.model.fields,help:gestiond'ecole.field_school_student__message_unread_counter
+msgid "Number of unread messages"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_departement__tel
+msgid "Numero d telephone de la departement"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_faculte__tel
+msgid "Numero d telephone de la faculte"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_student__tel
+msgid "Numero du telephone de l'étudiant"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_parent__tel
+msgid "Numero du telephone parent"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_professeur__tel
+msgid "Numero du telephone professeur"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model:ir.ui.menu,name:gestiond'ecole.configuration_menu
+msgid "Our Contacts"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model:ir.actions.act_window,name:gestiond'ecole.parent_list_action
+msgid "Parent"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model_terms:ir.ui.view,arch_db:gestiond'ecole.parent_form_view
+msgid "Parent Form"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model_terms:ir.ui.view,arch_db:gestiond'ecole.Filiere_search_view
+#: model_terms:ir.ui.view,arch_db:gestiond'ecole.parent_search_view
+#: model_terms:ir.ui.view,arch_db:gestiond'ecole.parent_tree_view
+msgid "Parent Tree"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model_terms:ir.ui.view,arch_db:gestiond'ecole.report_student_view
+msgid "Parent:"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_student__parent_ids
+#: model:ir.ui.menu,name:gestiond'ecole.parent_menu
+#: model_terms:ir.ui.view,arch_db:gestiond'ecole.departementt_form_view
+#: model_terms:ir.ui.view,arch_db:gestiond'ecole.student_form_view
+msgid "Parents"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model:ir.ui.menu,name:gestiond'ecole.openacademy_menu1
+msgid "Personnes"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_session__taken_seats
+msgid "Places sont prises"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model_terms:ir.ui.view,arch_db:gestiond'ecole.report_student_view
+msgid "Planning Menu"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_absence__professeur_id
+msgid "Professeur"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model_terms:ir.ui.view,arch_db:gestiond'ecole.professeur_form_view
+msgid "Professeur Form"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model_terms:ir.ui.view,arch_db:gestiond'ecole.professeur_search_view
+msgid "Professeur Tree"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model:ir.actions.act_window,name:gestiond'ecole.professeur_list_action
+#: model:ir.ui.menu,name:gestiond'ecole.professeur_menu
+msgid "Professeurs"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model_terms:ir.ui.view,arch_db:gestiond'ecole.departementt_form_view
+msgid "Professieur"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_departement__professeur_ids
+msgid "Professieurs"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model_terms:ir.ui.view,arch_db:gestiond'ecole.course_form_view
+msgid "Regitred sessions"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model_terms:ir.ui.view,arch_db:gestiond'ecole.course_form_view
+msgid "Regitred student"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_course__responsible_id
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_filiere__responsable_id
+msgid "Responsable"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_course__faculte_id
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_filiere__faculte_id
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_professeur__faculte_id
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_session__faculte_id
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_student__faculte_id
+msgid "Sa Faculte"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_professeur__filiere_id
+msgid "Sa Filiere"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model_terms:ir.ui.view,arch_db:gestiond'ecole.absence_form_view
+#: model_terms:ir.ui.view,arch_db:gestiond'ecole.session_form_view
+msgid "Schedule"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_absence__session_id
+#: model_terms:ir.ui.view,arch_db:gestiond'ecole.absence_form_view
+msgid "Seance"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model_terms:ir.ui.view,arch_db:gestiond'ecole.student_form_view
+msgid "Send email"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model_terms:ir.ui.view,arch_db:gestiond'ecole.session_calender_view
+msgid "Session Calendar"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model_terms:ir.ui.view,arch_db:gestiond'ecole.absence_form_view
+#: model_terms:ir.ui.view,arch_db:gestiond'ecole.session_form_view
+msgid "Session Form"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model_terms:ir.ui.view,arch_db:gestiond'ecole.session_graph_view
+msgid "Session Graph"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model_terms:ir.ui.view,arch_db:gestiond'ecole.session_pivot_view
+msgid "Session Pivot"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model:ir.actions.report,name:gestiond'ecole.report_session
+msgid "Session Report"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model_terms:ir.ui.view,arch_db:gestiond'ecole.session_tree_view
+msgid "Session Tree"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model:ir.actions.act_window,name:gestiond'ecole.session_list_action
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_course__session_ids
+#: model_terms:ir.ui.view,arch_db:gestiond'ecole.partner_instructor_form_view
+msgid "Sessions"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_professeur__courses_ids
+msgid "Son courses"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_departement__image
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_faculte__image
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_parent__image
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_student__image
+msgid "Son image"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_session__start_date
+msgid "Start Date"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model_terms:ir.ui.view,arch_db:gestiond'ecole.student_form_view
+msgid "Student Form"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model:ir.actions.report,name:gestiond'ecole.report_student
+msgid "Student Report"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model_terms:ir.ui.view,arch_db:gestiond'ecole.faculte_tree_view
+#: model_terms:ir.ui.view,arch_db:gestiond'ecole.professeur_tree_view
+#: model_terms:ir.ui.view,arch_db:gestiond'ecole.student_search_view
+#: model_terms:ir.ui.view,arch_db:gestiond'ecole.student_tree_view
+msgid "Student Tree"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model:ir.actions.act_window,name:gestiond'ecole.student_list_action
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_departement__student_ids
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_faculte__student_ids
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_filiere__session_ids
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_filiere__student_ids
+#: model:ir.ui.menu,name:gestiond'ecole.student_menu
+#: model_terms:ir.ui.view,arch_db:gestiond'ecole.course_form_view
+#: model_terms:ir.ui.view,arch_db:gestiond'ecole.departementt_form_view
+#: model_terms:ir.ui.view,arch_db:gestiond'ecole.faculte_form_view
+#: model_terms:ir.ui.view,arch_db:gestiond'ecole.filiere_form_view
+msgid "Students"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model:ir.ui.menu,name:gestiond'ecole.session_menu12
+#: model_terms:ir.ui.view,arch_db:gestiond'ecole.course_form_view
+msgid "Séances"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_course__message_unread
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_departement__message_unread
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_parent__message_unread
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_student__message_unread
+msgid "Unread Messages"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_course__message_unread_counter
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_departement__message_unread_counter
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_parent__message_unread_counter
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_student__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model_terms:ir.ui.view,arch_db:gestiond'ecole.absence_graph_view
+msgid "absence Graph"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model_terms:ir.ui.view,arch_db:gestiond'ecole.course_form_view
+#: model_terms:ir.ui.view,arch_db:gestiond'ecole.note_form_view
+msgid "course Form"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model_terms:ir.ui.view,arch_db:gestiond'ecole.course_tree_view
+#: model_terms:ir.ui.view,arch_db:gestiond'ecole.note_tree_view
+msgid "course Tree"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model:ir.model,name:gestiond'ecole.model_school_course
+msgid "course table"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_filiere__course_ids
+msgid "courses"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model_terms:ir.ui.view,arch_db:gestiond'ecole.filiere_tree_view
+msgid "filiere Tree"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_note__student_id
+msgid "nom de l'étudiant"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_departement__faculte_id
+msgid "nom de la Faculte"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_departement__name
+msgid "nom de la departement"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_faculte__name
+msgid "nom de la faculte"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_filiere__name
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_note__filiere_id
+msgid "nom de la filiere"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_course__name
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_note__cours_id
+msgid "nom du cours"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_parent__name
+msgid "nom du parent"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_note__professeur_id
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_professeur__name
+msgid "nom du professeur"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model:ir.model.fields,field_description:gestiond'ecole.field_school_session__seats
+msgid "number of seats"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model:ir.model,name:gestiond'ecole.model_school_session
+msgid "session table"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model:ir.model,name:gestiond'ecole.model_school_student
+msgid "student table"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model:ir.model,name:gestiond'ecole.model_school_departement
+msgid "table des departements"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model:ir.model,name:gestiond'ecole.model_school_faculte
+msgid "table des facultes"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model:ir.model,name:gestiond'ecole.model_school_filiere
+msgid "table des filieres"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model:ir.model,name:gestiond'ecole.model_school_note
+msgid "table des notes"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model:ir.model,name:gestiond'ecole.model_school_parent
+msgid "table des parent"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model:ir.model,name:gestiond'ecole.model_school_absence
+#: model:ir.model,name:gestiond'ecole.model_school_professeur
+msgid "table des professeurs"
+msgstr ""
+
+#. module: gestiond'ecole
+#: model_terms:ir.ui.view,arch_db:gestiond'ecole.report_session_view
+msgid "to"
+msgstr ""

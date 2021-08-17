@@ -1,0 +1,74 @@
+<odoo>
+   <record model="ir.ui.view" id="absence_form_view">
+        <field name="name">absence.form</field>
+        <field name="model">school.absence</field>
+        <field name="arch" type="xml">
+            <form string="Session Form">
+                <sheet>
+                    <group string="General">
+                        <field name="session_id">Seance</field>
+                        <field name="professeur_id"/>
+                    </group>
+                    <group string="Schedule">
+                        <field name="date_absence"/>
+                        <field name="duration"/>
+
+                    </group>
+                    <label for="student_ids"/>
+                    <field name="student_ids"/>
+
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record model="ir.ui.view" id="absence_graph_view">
+        <field name="name">absence.graph</field>
+        <field name="model">school.absence</field>
+        <field name="arch" type="xml">
+            <graph string="absence Graph">
+                <field name="session_id"/>
+                <field name="student_ids" type="measure"/>
+            </graph>
+        </field>
+    </record>
+
+
+
+
+    <record model="ir.ui.view" id="absence_calender_view">
+        <field name="name">absence.calendar</field>
+        <field name="model">school.absence</field>
+        <field name="arch" type="xml">
+            <calendar string="Absence Students Calendar" date_start="date_absence" date_stop="date_absence" color="student_ids">
+                <field name="session_id"/>
+                <field name="duration"/>
+            </calendar>
+
+        </field>
+    </record>
+
+
+       <record model="ir.ui.view" id="absence_tree_view">
+        <field name="name">absence.form</field>
+        <field name="model">school.absence</field>
+        <field name="arch" type="xml">
+            <tree string="Absence Tree">
+
+
+                        <field name="session_id"/>
+                        <field name="date_absence"/>
+                        <field name="professeur_id"/>
+            </tree>
+        </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="absence_list_action">
+            <field name="name">Absence</field>
+            <field name="res_model">school.absence</field>
+            <field name="view_mode">tree,form,calendar,graph,pivot</field>
+
+        </record>
+        <menuitem id="openacademy_menu3" name="Absences" parent="main__menu" action="absence_list_action" sequence="6"/>
+
+
+</odoo>

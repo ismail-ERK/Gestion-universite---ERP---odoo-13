@@ -1,0 +1,96 @@
+<odoo>
+   <record model="ir.ui.view" id="session_form_view">
+        <field name="name">session.form</field>
+        <field name="model">school.session</field>
+        <field name="arch" type="xml">
+            <form string="Session Form">
+                <sheet>
+                    <group string="General">
+                        <field name="course_id"/>
+                        <field name="name"/>
+                        <field name="filiere_id"/>
+                        <field name="departement_id"/>
+                    </group>
+                    <group string="Schedule">
+                        <field name="start_date"/>
+                        <field name="duration"/>
+                        <field name="seats"/>
+                    </group>
+                    <group string="Les places prise">
+                        <field name="taken_seats" widget="progressbar"/>
+                    </group>
+                    <notebook>
+                        <page string="Les etudiants assistés">
+                              <field name="attendee_ids">
+                                  <tree string="Etudiants assistés">
+                                      <field name="name"/>
+                                      <field name="email"/>
+                                  </tree>
+                              </field>
+                        </page>
+                        <page string="Absence">
+                              <field name="absences"/>
+                        </page>
+
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record model="ir.ui.view" id="session_graph_view">
+        <field name="name">session.graph</field>
+        <field name="model">school.session</field>
+        <field name="arch" type="xml">
+            <graph string="Session Graph">
+                <field name="course_id"/>
+                <field name="attendee_ids" type="measure"/>
+            </graph>
+        </field>
+    </record>
+    <record model="ir.ui.view" id="session_pivot_view">
+        <field name="name">session.pivot</field>
+        <field name="model">school.session</field>
+        <field name="arch" type="xml">
+            <graph string="Session Pivot">
+                <field name="course_id"/>
+                <field name="attendee_ids" type="measure"/>
+            </graph>
+        </field>
+    </record>
+
+
+
+    <record model="ir.ui.view" id="session_calender_view">
+        <field name="name">session.calendar</field>
+        <field name="model">school.session</field>
+        <field name="arch" type="xml">
+            <calendar string="Session Calendar" date_start="start_date" date_stop="start_date" color="course_id">
+                <field name="name"/>
+            </calendar>
+        </field>
+    </record>
+
+       <record model="ir.ui.view" id="session_tree_view">
+        <field name="name">session.form</field>
+        <field name="model">school.session</field>
+        <field name="arch" type="xml">
+            <tree string="Session Tree" decoration-success="taken_seats==100" decoration-danger="taken_seats==0" decoration-primary="taken_seats==50" decoration-warning="taken_seats==40" >
+
+                        <field name="name"/>
+                        <field name="course_id"/>
+                        <field name="taken_seats" widget="progressbar"/>
+            </tree>
+        </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="session_list_action">
+            <field name="name">Sessions</field>
+            <field name="res_model">school.session</field>
+            <field name="view_mode">tree,form,calendar,graph,pivot</field>
+
+        </record>
+        <menuitem id="openacademy_menu2" name="Courses and Sessions" parent="main__menu" sequence="4"/>
+
+         <menuitem id="session_menu12" name="Séances" parent="openacademy_menu2" action="session_list_action"/>
+
+</odoo>

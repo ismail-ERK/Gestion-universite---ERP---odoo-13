@@ -1,0 +1,94 @@
+<odoo>
+
+
+
+<!--    Session View-->
+   <record model="ir.ui.view" id="course_form_view">
+        <field name="name">course.form</field>
+        <field name="model">school.course</field>
+    <field name="arch" type="xml">
+        <form string="course Form">
+            <sheet>
+                <group>
+                    <field name="name"/>
+
+                </group>
+                <group>
+                    <field name="description"/>
+                </group>
+                <group>
+                    <field name="responsible_id"/>
+                </group>
+                <group>
+                    <field name="faculte_id"/>
+                </group>
+                 <group>
+                    <field name="departement_id"/>
+                </group>
+            <notebook>
+                <page string="Description">
+                    <field name="description" />
+                </page>
+                <page string="Filieres">
+                    <field name="filiere_ids" />
+                </page>
+                <page string="Séances">
+                    <field name="session_ids">
+                        <tree string="Regitred sessions">
+                            <field name="name"/>
+                            <field name="start_date"/>
+                            <field name="duration"/>
+                        </tree>
+                    </field>
+                </page>
+                <page string="Students">
+                    <field name="student_ids">
+                        <tree string="Regitred student">
+                            <field name="name"/>
+                        </tree>
+                    </field>
+                </page>
+            </notebook>
+            </sheet>
+        <div class="oe_chatter">
+            <field name="message_follower_ids" widget="mail_followers"></field>
+            <field name="message_ids" widget="mail_thread"></field>
+        </div>
+        </form>
+
+    </field>
+    </record>
+
+
+
+
+       <record model="ir.ui.view" id="course_tree_view">
+        <field name="name">course.form</field>
+        <field name="model">school.course</field>
+    <field name="arch" type="xml">
+        <tree string="course Tree">
+
+                    <field name="name"/>
+                    <field name="description"/>
+                    <field name="responsible_id"/>
+                    <field name="faculte_id"/>
+
+        </tree>
+    </field>
+    </record>
+
+
+
+
+
+        <record model="ir.actions.act_window" id="course_list_action">
+            <field name="name">Courses</field>
+            <field name="res_model">school.course</field>
+            <field name="view_mode">tree,form</field>
+
+        </record>
+
+            <menuitem id="course_menu" name="Cours" parent="openacademy_menu2" action="course_list_action"/>
+
+
+</odoo>

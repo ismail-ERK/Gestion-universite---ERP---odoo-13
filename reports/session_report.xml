@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <report
+        id="report_session"
+        model="school.session"
+        string="Session Report"
+        name="gestiond'ecole.report_session_view"
+        file="school.report_session"
+        report_type="qweb-pdf" />
+
+    <template id="report_session_view">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="doc">
+                <t t-call="web.external_layout">
+                    <div class="page">
+                        <h2 t-field="doc.name"/>
+                        <h2 t-field="doc.course_id"/>
+                        <h2 t-field="doc.filiere_id"/>
+                        <p>Form
+                            <span t-field="doc.start_date"/>
+                             to
+                            <span t-field="doc.end_date"/>
+                            </p>
+                        <p>La duree : <span t-field="doc.duration"/> h</p>
+                        <p>Nombre des places : <span t-field="doc.seats"/> h</p>
+                        <p>Le porcentage de presence : <span t-field="doc.taken_seats"/> %</p>
+                        <h3>Attendees:</h3>
+                        <ul>
+                            <t t-foreach="doc.attendee_ids" t-as="attendee">
+                                <li>
+                                    <span t-field="attendee.name"/>
+                                </li>
+                            </t>
+                        </ul>
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+
+
+
+</odoo>
+
